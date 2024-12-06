@@ -17,7 +17,7 @@ function Category({ image, heading, children, reverse = false }) {
   }
 
   return (
-    <div ref={ref} className={`flex h-[40rem] ${reverse ? "flex-row-reverse" : ""}`}>
+    <div ref={ref} className={`flex h-[814px] ${reverse ? "flex-row-reverse" : ""}`}>
       {/* Image Animation */}
       <motion.div
         className="w-[50%] h-full"
@@ -33,7 +33,7 @@ function Category({ image, heading, children, reverse = false }) {
 
       {/* Content Animation */}
       <motion.div
-        className={`h-full w-[50%] pt-24 ${reverse ? "pr-4" : "pl-20"}`}
+        className={`h-full w-[50%] pt-24 ${reverse ? "pr-24" : "pl-20"}`}
         initial="hidden"
         animate={controls}
         variants={{

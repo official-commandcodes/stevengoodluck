@@ -17,7 +17,7 @@ function Testimonial() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     arrows: false, // Disable default arrow
     centerMode: true, // Optional: Center the active slide
     centerPadding: "0", // Disable extra padding in center mode

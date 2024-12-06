@@ -13,10 +13,10 @@ function Header() {
   });
 
   return (
-    <header className="px-padding-hr py-5 h-[90vh]">
+    <header className="pl-padding-hr py-5">
       <div className="text-[24px] pt-6 pb-8">Bitsphere Consulting</div>
 
-      <div className="flex items-center justify-between gap-x-20">
+      <div className="flex items-center justify-between gap-x-20 h-full">
         <div className="flex flex-col gap-y-[3rem]">
           <animated.h1 style={headingStyles} className="font-extrabold text-[4.5rem] leading-[4.5rem]">
             Achieve Your Exchange Goals <br /> with Bitsphere Consulting

@@ -46,9 +46,15 @@
 
 * {
   font-family: "Proxima Nova";
+  outline: none;
 }
 
 html,
 body {
   scrollbar-width: none;
+  color: #050612;
+}
+
+section {
+  border-top: 2px solid #4936dc;
 }

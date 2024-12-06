@@ -9,6 +9,7 @@ export default {
       colors: {
         primary: {
           100: "#151730",
+          950: "#050612",
         },
 
         customAmber: {
@@ -19,6 +20,10 @@ export default {
         customPurple: {
           300: "#4936DC",
           400: "#110CA9",
+        },
+
+        customGray: {
+          100: "#616161",
         },
       },
     },
