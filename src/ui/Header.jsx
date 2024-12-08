@@ -18,7 +18,7 @@ function Header() {
 
       <div className="flex items-center justify-between gap-x-10 h-full">
         <div className="flex flex-col gap-y-[3rem] w-[50%] pr-32">
-          <animated.h1 style={headingStyles} className="font-extrabold text-[4.5rem] leading-[4.5rem]">
+          <animated.h1 style={headingStyles} className="font-extrabold text-[4rem] leading-[4.5rem]">
             Achieve Your Exchange Goals <br /> with Bitsphere Consulting
           </animated.h1>
 
