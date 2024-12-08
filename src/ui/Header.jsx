@@ -13,11 +13,11 @@ function Header() {
   });
 
   return (
-    <header className="pl-padding-hr py-5">
-      <div className="text-[24px] pt-6 pb-8">Bitsphere Consulting</div>
+    <header className="pl-padding-hr py-5 pb-0">
+      <div className="text-[24px] pt-6 ">Bitsphere Consulting</div>
 
-      <div className="flex items-center justify-between gap-x-20 h-full">
-        <div className="flex flex-col gap-y-[3rem]">
+      <div className="flex items-center justify-between gap-x-10 h-full">
+        <div className="flex flex-col gap-y-[3rem] w-[50%] pr-32">
           <animated.h1 style={headingStyles} className="font-extrabold text-[4.5rem] leading-[4.5rem]">
             Achieve Your Exchange Goals <br /> with Bitsphere Consulting
           </animated.h1>

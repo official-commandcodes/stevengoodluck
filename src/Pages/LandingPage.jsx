@@ -18,7 +18,7 @@ function LandingPage() {
       <Header />
 
       {/* Categories */}
-      <section className="px-padding-hr flex flex-col">
+      <section className="border_top_line px-padding-hr flex flex-col">
         <Category reverse={false} image="/category--1.png" heading="Venture Capital">
           Bitsphere Consulting connects projects with the right people for Tier 1 and centralized exchanges. Our market knowledge and relationships help you reach your project goals efficiently.
         </Category>
@@ -36,7 +36,7 @@ function LandingPage() {
       <section className="p-padding-hr bg-customPurple-400">
         <h2 className="font-bold text-[2.3rem] pb-10">Unlock Holistic Exchange Growth</h2>
 
-        <div className="grid grid-cols-2 gap-y-6 gap-x-10">
+        <div className="grid grid-cols-2 gap-y-16 gap-x-10">
           <Growth heading="Comprehensive Exchange Audits" image="/growth--1.png">
             Bitsphere Consulting connects projects with the right people for Tier 1 and centralized exchanges. Our market tly.
           </Growth>
