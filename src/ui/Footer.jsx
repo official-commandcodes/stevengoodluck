@@ -34,7 +34,7 @@ function Footer() {
         <ul className="footer_li font-[400] text-[22px]">
           <h3 className="font-[700] text-[30px] pb-8">Resources</h3>
           <li>
-            <Link to="/">FAQs</Link>
+            <Link to="/faqs">FAQs</Link>
           </li>
           <li>
             <Link to="/">Privacy and Policy</Link>

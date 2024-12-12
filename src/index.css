@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
 @font-face {
   font-family: "Proxima Nova";
   src: url(./fonts/proxima-nova/Proxima%20Nova%20Light.otf);
@@ -45,7 +47,7 @@
 @tailwind utilities;
 
 * {
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", sans-serif;
   outline: none;
 }
 
@@ -61,4 +63,8 @@ body {
 
 .footer_li li {
   padding: 5px 0;
+}
+
+#groteskEl {
+  font-family: "Space Grotesk", sans-serif;
 }
