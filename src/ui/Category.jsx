@@ -5,12 +5,16 @@ import { motion, useAnimation } from "framer-motion";
 
 import ContactButton from "./ContactButton";
 
+import { useContactContext } from "../context/ContactContext";
+
 function Category({ image, heading, children, reverse = false }) {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true, // Trigger animation only once
     threshold: 0.2, // Trigger when 20% of the component is visible
   });
+
+  const { handleContact } = useContactContext();
 
   if (inView) {
     controls.start("visible");
@@ -43,7 +47,7 @@ function Category({ image, heading, children, reverse = false }) {
       >
         <h2 className="text-[3.5rem] font-bold">{heading}</h2>
         <p className="leading-8 font-light text-[1.2rem] py-8">{children}</p>
-        <ContactButton>Contact</ContactButton>
+        <ContactButton handleContact={handleContact}>Contact</ContactButton>
       </motion.div>
     </div>
   );

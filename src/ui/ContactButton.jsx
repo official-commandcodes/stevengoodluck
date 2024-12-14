@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
 import { useSpring, animated } from "@react-spring/web";
 
 import PropTypes from "prop-types";
 
-function ContactButton({ children, weight = false, to = "/contact" }) {
+function ContactButton({ children, weight = false, handleContact }) {
   // Spring animation for the heading
   const headingStyles = useSpring({
     from: { opacity: 0, transform: "translateY(20px)" }, // Start hidden and slightly above
@@ -14,11 +13,9 @@ function ContactButton({ children, weight = false, to = "/contact" }) {
 
   return (
     <span>
-      <Link to={to}>
-        <animated.div style={headingStyles} className={`w-fit border-2 border-customAmber-50 rounded-full px-14 py-3 transition-colors duration-500 ${weight ? "bg-customAmber-50 text-primary-100 hover:bg-transparent hover:text-white" : "hover:bg-customAmber-50 hover:text-primary-100"}`}>
-          {children}
-        </animated.div>
-      </Link>
+      <animated.button onClick={handleContact} style={headingStyles} className={`w-fit border-2 border-customAmber-50 rounded-full px-14 py-3 transition-colors duration-500 ${weight ? "bg-customAmber-50 text-primary-100 hover:bg-transparent hover:text-white" : "hover:bg-customAmber-50 hover:text-primary-100"}`}>
+        {children}
+      </animated.button>
     </span>
   );
 }
@@ -27,6 +24,7 @@ ContactButton.propTypes = {
   children: PropTypes.string.isRequired,
   to: PropTypes.string,
   weight: PropTypes.bool,
+  handleContact: PropTypes.func.isRequired,
 };
 
 export default ContactButton;

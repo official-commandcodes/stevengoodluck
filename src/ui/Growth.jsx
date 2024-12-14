@@ -3,28 +3,17 @@ import { motion } from "framer-motion";
 
 import ContactButton from "./ContactButton";
 
+import { useContactContext } from "../context/ContactContext";
+
 function Growth({ heading, image, children }) {
+  const { handleContact } = useContactContext();
+
   const fadeInUp = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
   };
 
   return (
-    // <div>
-    //   <div className="w-full h-[65%] overflow-hidden" style={{ borderRadius: "1.5rem" }}>
-    //     <img src={image} alt={heading} className="w-full h-full object-cover" />
-    //   </div>
-
-    //   <div className="h-[35%] flex flex-col justify-between pt-4">
-    //     <h3 className="font-bold text-[1.8rem]">{heading}</h3>
-    //     <p className="text-[1.2rem] py-3">{children}</p>
-
-    //     <div className="w-fit">
-    //       <ContactButton>More info</ContactButton>
-    //     </div>
-    //   </div>
-    // </div>
-
     <motion.div
       initial="hidden"
       whileInView="visible"
@@ -41,7 +30,7 @@ function Growth({ heading, image, children }) {
         <p className="text-[1.2rem] py-3">{children}</p>
 
         <div className="w-fit">
-          <ContactButton>More info</ContactButton>
+          <ContactButton handleContact={handleContact}>More info</ContactButton>
         </div>
       </div>
     </motion.div>

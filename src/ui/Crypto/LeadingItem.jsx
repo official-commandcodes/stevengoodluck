@@ -1,13 +1,17 @@
 import ContactButton from "../ContactButton";
 import PropTypes from "prop-types";
 
-function LeadingItem({ url, image, children, heading }) {
+import { useContactContext } from "../../context/ContactContext";
+
+function LeadingItem({ image, children, heading }) {
+  const { handleContact } = useContactContext();
+
   return (
     <div>
       <img src={image} alt={heading} className="py-4" />
       <h3 className="font-semibold text-[38px]">{heading}</h3>
       <p className="text-[20px] text-white py-4">{children}</p>
-      <ContactButton to={url} weight={true}>
+      <ContactButton handleContact={handleContact} weight={true}>
         LinkedIn
       </ContactButton>
     </div>
@@ -16,7 +20,6 @@ function LeadingItem({ url, image, children, heading }) {
 
 LeadingItem.propTypes = {
   children: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   heading: PropTypes.string.isRequired,
 };

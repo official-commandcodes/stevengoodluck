@@ -10,8 +10,11 @@ import LeadingInnovators from "../ui/Crypto/LeadingInnovators";
 import ContactButton from "../ui/ContactButton";
 import Footer from "../ui/Footer";
 import AnimatedText from "../ui/AnimatedText";
+import { useContactContext } from "../context/ContactContext";
 
 function LandingPage() {
+  const { handleContact } = useContactContext();
+
   return (
     <div>
       <Navbar />
@@ -70,7 +73,9 @@ function LandingPage() {
       <section className="bg-primary-950 h-[45rem] flex justify-center items-center">
         <div className="w-[577px] flex flex-col justify-center items-center">
           <AnimatedText />
-          <ContactButton weight={true}>Contact</ContactButton>
+          <ContactButton handleContact={handleContact} weight={true}>
+            Contact
+          </ContactButton>
         </div>
       </section>
 

@@ -5,6 +5,7 @@ export default {
     extend: {
       spacing: {
         "padding-hr": "4rem",
+        "sm-padding-hr": "2rem",
       },
       colors: {
         primary: {

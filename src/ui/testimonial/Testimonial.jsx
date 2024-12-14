@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TestimonialItem from "./TestimonialItem";
 
-const buttonStyle = "flex justify-center items-center w-14 h-14 rounded-full bg-customAmber-50 transition-colors duration-500";
+const buttonStyle = "flex justify-center items-center w-14 h-14 rounded-full transition-colors duration-500";
 function Testimonial() {
   const sliderRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -72,10 +72,10 @@ function Testimonial() {
       </Slider>
 
       <div className="pt-10 flex items-center gap-x-4">
-        <button className={`${buttonStyle} ${isAtFirstSlide ? "bg-[#616161] cursor-not-allowed" : ""}`} disabled={isAtFirstSlide} onClick={goToPrev}>
+        <button className={`${buttonStyle} ${isAtFirstSlide ? "bg-[#616161] cursor-not-allowed" : "bg-customAmber-50"}`} disabled={isAtFirstSlide} onClick={goToPrev}>
           <HiArrowLongLeft className="text-[#090A1C] text-3xl" />
         </button>
-        <button className={`${buttonStyle}  ${isAtLastSlide ? "bg-[#616161] cursor-not-allowed" : ""}`} disabled={isAtLastSlide} onClick={goToNext}>
+        <button className={`${buttonStyle}  ${isAtLastSlide ? "bg-[#616161] cursor-not-allowed" : "bg-customAmber-50"}`} disabled={isAtLastSlide} onClick={goToNext}>
           <HiArrowLongRight className="text-[#090A1C] text-3xl" />
         </button>
       </div>

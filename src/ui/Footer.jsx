@@ -5,8 +5,8 @@ const iconStyle = "w-[44px] h-[44px] rounded-full bg-white flex justify-center i
 
 function Footer() {
   return (
-    <footer className="bg-primary-100 p-padding-hr flex flex-col">
-      <div className="grid grid-cols-4 gap-x-10">
+    <footer className="bg-primary-100 p-sm-padding-hr md:p-padding-hr flex flex-col">
+      <div className="grid md:grid-cols-4 gap-y-6 md:gap-y-0 md:gap-x-10">
         <div>
           <div className="flex items-center gap-x-2 pb-5">
             <img src="/logo.svg" alt="" className="w-[80px] h-[80px]" />
@@ -21,7 +21,7 @@ function Footer() {
         <ul className="footer_li font-[400] text-[22px]">
           <h3 className="font-[700] text-[30px] pb-8">Company</h3>
           <li>
-            <Link to="/">About Us</Link>
+            <Link to="/about">About Us</Link>
           </li>
           <li>
             <Link to="/">Blog</Link>

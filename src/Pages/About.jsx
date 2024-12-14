@@ -1,21 +1,26 @@
+import { useEffect } from "react";
 import Footer from "../ui/Footer";
 import Navbar from "../ui/Navbar";
 import Vision from "../ui/Vision";
 
 function About() {
+  useEffect(() => {
+    window.scroll(0, 0);
+  });
+
   return (
     <div>
       <Navbar />
 
       <header>
-        <div className="text-[24px] px-20 py-6">Bitsphere Consulting</div>
+        <div className="text-[24px] px-sm-padding-hr lg:px-20 py-6">Bitsphere Consulting</div>
 
-        <div className="h-[80vh] relative">
+        <div className="h-[80vh] relative px-sm-padding-hr md:px-0">
           <div className="absolute top-0 left-0 w-full h-full">
             <img src="/about-bg.jpeg" alt="About Background Image" className="w-full h-full object-cover" />
           </div>
 
-          <div className="absolute top-0 left-0 w-full h-full flex flex-col gap-y-4 justify-center items-center bg-[#13131352]">
+          <div className="absolute top-0 text-center left-0 w-full h-full flex flex-col gap-y-4 justify-center items-center bg-[#13131352]">
             <h1 className="text-[48px] font-bold text-white">Welcome To Bitsphere Consulting </h1>
             <p id="groteskEl" className="text-[32px] font-medium">
               Guiding Light: Illuminate Your Journey with Faith.
@@ -24,8 +29,8 @@ function About() {
         </div>
       </header>
 
-      <section className="px-20 py-20 bg-primary-100">
-        <h2 className="uppercase text-center pb-10 text-[40px] font-semibold">About us</h2>
+      <section className="px-sm-padding-hr md:px-20 py-20 bg-primary-100">
+        <h2 className="uppercase text-center pb-10 text-[24px] md:text-[40px] font-semibold">About us</h2>
 
         <div className="flex flex-col gap-y-8 text-[18px] font-normal">
           <p>Lorem ipsum dolor sit amet consectetur. Id scelerisque amet aliquam id tincidunt sapien felis faucibus. Egestas blandit faucibus nec nullam quisque tellus. Ultricies arcu nulla diam commodo suspendisse vitae enim. Convallis arcu sagittis nullam velit lorem risus aliquam elementum.</p>
@@ -40,10 +45,10 @@ function About() {
         </div>
       </section>
 
-      <section className="px-20 py-14 bg-customAmber-50">
-        <h2 className="text-black font-bold text-[40px] pb-10">Our Vision for the Future</h2>
+      <section className="px-sm-padding-hr md:px-20 py-14 bg-customAmber-50">
+        <h2 className="text-black font-bold text-[24px] md:text-[40px] pb-10">Our Vision for the Future</h2>
 
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           <Vision title="Community Driven">we will provide the best price for you , from the best quality we will give you a specials price compared to other places and we will give you other bonuses.</Vision>
           <Vision title="Action Oriented">AN easy process is our advantage, you don’t have to brother taking care of your needs, we will be ready help you until its finished.</Vision>
           <Vision title="Skilled Based">Quality first, all projects are backed by our fantastic support & 100% satisfaction guarantee.</Vision>

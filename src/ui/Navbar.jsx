@@ -1,14 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useSpring, animated } from "@react-spring/web";
+import { MdOutlineSegment } from "react-icons/md";
 
 import ContactModal from "./ContactModal";
 
 const navItems = [
   { to: "/", text: "Home" },
   { to: "/about", text: "About Us" },
-  { to: "/team", text: "Team" },
+  { to: "/", text: "Team" },
 ];
 
 export default function Navbar() {
@@ -27,14 +28,23 @@ export default function Navbar() {
     boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // Initial shadow
   }));
 
+  useEffect(() => {
+    const teamIdBtn = document.getElementById("teamId");
+    const teamSection = document.getElementById("teamSection");
+
+    teamIdBtn.addEventListener("click", () => {
+      teamSection.scrollIntoView({ behavior: "smooth" });
+    });
+  }, []);
+
   return (
     <>
-      <nav className="bg-customAmber-50 px-padding-hr py-3 flex justify-between items-center">
+      <nav className="px-sm-padding-hr bg-customAmber-50 lg:px-padding-hr py-3 flex justify-between items-center">
         <Link to="/">
           <img src="/logo.svg" alt="Site Logo" />
         </Link>
 
-        <ul className="flex items-center gap-x-6 text-primary-100">
+        <ul className="hidden lg:flex items-center gap-x-6 text-primary-100">
           {navItems.map(({ to, text }, index) => (
             <motion.li
               key={index}
@@ -50,7 +60,9 @@ export default function Navbar() {
               }}
             >
               <li className="text-xl">
-                <Link to={to}>{text}</Link>
+                <Link to={to} id={text === "Team" ? "teamId" : ""}>
+                  {text}
+                </Link>
               </li>
             </motion.li>
           ))}
@@ -58,7 +70,7 @@ export default function Navbar() {
 
         <animated.button
           style={styles}
-          className="bg-customPurple-300 h-full px-5 py-2.5 rounded-md text-white font-light hover:bg-primary-100 transition-colors duration-500"
+          className="hidden lg:block bg-customPurple-300 h-full px-5 py-2.5 rounded-md text-white font-light hover:bg-primary-100 transition-colors duration-500"
           onMouseEnter={() =>
             api.start({
               scale: 1.1, // Slightly enlarge on hover
@@ -75,6 +87,10 @@ export default function Navbar() {
         >
           Schedule a Call
         </animated.button>
+
+        <button className="block lg:hidden bg-customPurple-300 p-2">
+          <MdOutlineSegment className="text-[2rem]" />
+        </button>
       </nav>
 
       <ContactModal isOpen={isOpen} onClose={() => setIsOpen(false)} />

@@ -1,6 +1,6 @@
 function Connect() {
   return (
-    <section className="p-padding-hr flex gap-x-16 bg-primary-950">
+    <section className="p-padding-hr flex gap-x-16 bg-primary-950" id="ContactSection">
       <div className="h-full self-start flex-1 text-white">
         <h2 className="text-[40px] font-[700] pb-5">Connect with Our Crypto Experts</h2>
         <p className="text-[20px] font-[400]">Reach our to Bitsphere Consulting for tailored crypto exchange solutions.</p>

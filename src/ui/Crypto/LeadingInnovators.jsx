@@ -37,6 +37,7 @@ function LeadingInnovators() {
   return (
     <motion.section
       className="p-padding-hr pb-28 flex flex-col"
+      id="teamSection"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -48,7 +49,7 @@ function LeadingInnovators() {
         {data.map((person, index) => {
           return (
             <motion.div key={index} variants={itemVariants}>
-              <LeadingItem url="/steven.png" image={person.image} heading={person.name}>
+              <LeadingItem image={person.image} heading={person.name}>
                 {person.description}
               </LeadingItem>
             </motion.div>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import { FaChevronDown } from "react-icons/fa6";
@@ -15,16 +15,21 @@ const faqData = [
 ];
 
 function Faqs() {
+  useEffect(() => {
+    window.scroll(0, 0);
+  });
+
   return (
     <div>
       <Navbar />
-      <div className="text-[24px] px-20 py-6">Bitsphere Consulting</div>
 
-      <section className="px-[11rem]">
+      <div className="hidden md:block text-[24px] px-20 py-6">Bitsphere Consulting</div>
+
+      <section className="p-sm-padding-hr md:px-[11rem]">
         <div className="flex flex-col justify-center items-center gap-y-3 text-center pb-10">
           <span className="bg-customPurple-300 flex justify-center items-center uppercase font-normal text-white w-[84px] h-[44px] rounded-[4px]">faq</span>
-          <h2 className="font-bold text-[38px]">Frequently Asked Questions</h2>
-          <p className="font-normal text-[20px] px-[9rem]">Welcome to our FAQ page! We’ve compiled a list of commonly asked questions to provide you with quick and informative answers.</p>
+          <h2 className="font-bold text-[24px] md:text-[38px]">Frequently Asked Questions</h2>
+          <p className="font-normal text-[16px] px-[3rem] md:text-[20px] md:px-[9rem]">Welcome to our FAQ page! We’ve compiled a list of commonly asked questions to provide you with quick and informative answers.</p>
         </div>
 
         <div className="border-y-2 border-[#61616199]">
@@ -33,7 +38,7 @@ function Faqs() {
           ))}
         </div>
 
-        <div className="px-[9rem] py-[3rem]">
+        <div className="px-0 py-0 md:px-[9rem] md:py-[3rem]">
           <div className="bg-customAmber-50 rounded-[0.5rem] flex flex-col justify-center items-center text-primary-900 px-12 py-8 text-center">
             <h3 className="font-bold text-[28px]">Still have a question?</h3>
             <p className="font-normal text-[16px] py-4">You can submit your question or request through our contact form. Please provide as much detail as possible so that we can assist you effectively.</p>
@@ -62,13 +67,13 @@ function AccordionItem({ question, answer, isLastEl }) {
   return (
     <div className={` pb-5 ${isLastEl ? "" : "border-b-2 border-[#61616199]"}`}>
       <div onClick={() => setIsOpen(!isOpen)} tabIndex="-1" className="flex justify-between items-center cursor-pointer">
-        <h3 className="text-[28px] font-bold pt-5">{question}</h3>
+        <h3 className="text-[20px] md:text-[24px] font-bold pt-5">{question}</h3>
         <motion.div animate={{ rotate: isOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
           <FaChevronDown />
         </motion.div>
       </div>
 
-      <motion.div initial={{ height: 0 }} animate={{ height: isOpen ? "auto" : 0 }} transition={{ duration: 0.3 }} className="overflow-hidden text-[18px] font-normal">
+      <motion.div initial={{ height: 0 }} animate={{ height: isOpen ? "auto" : 0 }} transition={{ duration: 0.3 }} className="overflow-hidden text-[16px] md:text-[18px] font-normal">
         <p>{answer}</p>
       </motion.div>
     </div>

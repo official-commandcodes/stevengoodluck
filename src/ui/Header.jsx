@@ -3,7 +3,11 @@ import { useSpring, animated } from "@react-spring/web";
 import HeaderPhoneImage from "../ui/HeaderPhoneImage";
 import ContactButton from "./ContactButton";
 
+import { useContactContext } from "../context/ContactContext";
+
 function Header() {
+  const { handleContact } = useContactContext();
+
   // Spring animation for the heading
   const headingStyles = useSpring({
     from: { opacity: 0, transform: "translateY(20px)" }, // Start hidden and slightly above
@@ -26,7 +30,7 @@ function Header() {
             Bitsphere Consulting connects projects with the right people for Tier 1 and centralized exchanges. Our market knowledge and relationships help you reach your project goals efficiently.
           </animated.p>
 
-          <ContactButton>Contact</ContactButton>
+          <ContactButton handleContact={handleContact}>Contact</ContactButton>
         </div>
 
         <HeaderPhoneImage />
