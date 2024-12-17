@@ -11,13 +11,35 @@ function Testimonial() {
   const sliderRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [totalSlides, setTotalSlides] = useState(0);
-
-  const slidesToShow = 3; // Adjust this to your `slidesToShow` value
+  const [slidesToShow, setSlidesToShow] = useState(3);
 
   // Update total slides dynamically when content changes
   useEffect(() => {
     const totalItems = sliderRef.current?.innerSlider?.state.slideCount || 0;
     setTotalSlides(totalItems);
+  }, []);
+
+  const handleResize = () => {
+    if (window.innerWidth < 667) {
+      setSlidesToShow(1);
+    } else if (window.innerWidth > 667 && window.innerWidth < 1024) {
+      setSlidesToShow(2);
+    } else {
+      setSlidesToShow(3);
+    }
+  };
+
+  // Managing slides for various screens
+  useEffect(() => {
+    // Initialize the slide count on mount
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const settings = {
@@ -71,7 +93,7 @@ function Testimonial() {
         </TestimonialItem>
       </Slider>
 
-      <div className="pt-10 flex items-center gap-x-4">
+      <div className="pt-10 flex justify-center md:justify-start items-center gap-x-4">
         <button className={`${buttonStyle} ${isAtFirstSlide ? "bg-[#616161] cursor-not-allowed" : "bg-customAmber-50"}`} disabled={isAtFirstSlide} onClick={goToPrev}>
           <HiArrowLongLeft className="text-[#090A1C] text-3xl" />
         </button>

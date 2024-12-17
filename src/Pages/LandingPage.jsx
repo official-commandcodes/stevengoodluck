@@ -21,7 +21,7 @@ function LandingPage() {
       <Header />
 
       {/* Categories */}
-      <section className="border_top_line px-padding-hr flex flex-col">
+      <section className="border_top_line px-sm-padding-hr pb-14 md:pb-0 md:px-padding-hr flex flex-col gap-y-10 md:gap-y-0">
         <Category reverse={false} image="/category--1.png" heading="Venture Capital">
           Bitsphere Consulting connects projects with the right people for Tier 1 and centralized exchanges. Our market knowledge and relationships help you reach your project goals efficiently.
         </Category>
@@ -36,10 +36,10 @@ function LandingPage() {
       </section>
 
       {/* Holistic Growth */}
-      <section className="p-padding-hr bg-customPurple-400">
-        <h2 className="font-bold text-[2.3rem] pb-10">Unlock Holistic Exchange Growth</h2>
+      <section className="p-sm-padding-hr md:p-padding-hr bg-customPurple-400">
+        <h2 className="font-bold text-[1.7rem] md:text-[2.3rem] pb-10">Unlock Holistic Exchange Growth</h2>
 
-        <div className="grid grid-cols-2 gap-y-16 gap-x-10">
+        <div className="grid md:grid-cols-2 gap-y-16 gap-x-10">
           <Growth heading="Comprehensive Exchange Audits" image="/growth--1.png">
             Bitsphere Consulting connects projects with the right people for Tier 1 and centralized exchanges. Our market tly.
           </Growth>
@@ -59,7 +59,7 @@ function LandingPage() {
       </section>
 
       {/* Reviews */}
-      <section className="p-padding-hr bg-primary-100">
+      <section className="p-sm-padding-hr md:p-padding-hr bg-primary-100">
         <Testimonial />
       </section>
 
@@ -71,7 +71,7 @@ function LandingPage() {
 
       {/* Discover Bitsphere */}
       <section className="bg-primary-950 h-[45rem] flex justify-center items-center">
-        <div className="w-[577px] flex flex-col justify-center items-center">
+        <div className="p-6 md:p-0 md:w-[577px] flex flex-col justify-center items-center">
           <AnimatedText />
           <ContactButton handleContact={handleContact} weight={true}>
             Contact
@@ -80,19 +80,19 @@ function LandingPage() {
       </section>
 
       {/* Digital Assets Management */}
-      <section className="bg-customAmber-50 p-[6rem] text-[#090A1C] text-center">
+      <section className="bg-customAmber-50 p-sm-padding-hr md:p-[6rem] text-[#090A1C] text-center">
         <div>
-          <h2 className="text-[40px] font-[700]">Holistic Approaches to Digital Asset Management</h2>
-          <p className="text-[24px] font-[400]">At Bitsphere Consulting, we champion holistic digital asset management, fostering innovation and security in UAE’s crypto exchanges.</p>
+          <h2 className="text-[24px] md:text-[40px] font-[700]">Holistic Approaches to Digital Asset Management</h2>
+          <p className="text-[17px] md:text-[24px] font-[400]">At Bitsphere Consulting, we champion holistic digital asset management, fostering innovation and security in UAE’s crypto exchanges.</p>
         </div>
 
-        <div className="flex items-center gap-x-[3rem] py-[5rem]">
+        <div className="flex flex-col md:flex-row items-center gap-x-[3rem] py-[2.5rem] md:py-[5rem]">
           <Center title="Client-Centric">We prioritize the needs of our clients, ensuring tailored solutions for each union challenge.</Center>
           <Center title="Expertise">Our team brings deep knowledge and experience in the crypto exchange sector.</Center>
           <Center title="Collaboration">We work closely who ensure receive their goals, fostering strong sorroudings</Center>
         </div>
 
-        <div className="flex items-center gap-x-[3rem] ">
+        <div className="flex flex-col md:flex-row items-center gap-x-[3rem] ">
           <Center title="+20 years">Providing Road solutions for crypto exchanges.</Center>
           <Center title="24/7 Support">We offer round-the-cook support for all our work</Center>
           <Center title="99.9% Uptime">We offer round-the-cook support for all our work</Center>
@@ -109,9 +109,9 @@ export default LandingPage;
 
 function Center({ title, children }) {
   return (
-    <div>
-      <h2 className="font-[700] text-[34px] pb-3">{title}</h2>
-      <p className="font-[400] text-[22px]">{children}</p>
+    <div className="p-4 md:p-0">
+      <h2 className="font-[700] text-[24px] md:text-[34px] pb-1 md:pb-3">{title}</h2>
+      <p className="font-[400] text-[16px] md:text-[22px]">{children}</p>
     </div>
   );
 }

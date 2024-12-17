@@ -9,8 +9,8 @@ function LeadingItem({ image, children, heading }) {
   return (
     <div>
       <img src={image} alt={heading} className="py-4" />
-      <h3 className="font-semibold text-[38px]">{heading}</h3>
-      <p className="text-[20px] text-white py-4">{children}</p>
+      <h3 className="font-semibold text-[24px] md:text-[38px]">{heading}</h3>
+      <p className="text-[16px] md:text-[20px] text-white py-4">{children}</p>
       <ContactButton handleContact={handleContact} weight={true}>
         LinkedIn
       </ContactButton>

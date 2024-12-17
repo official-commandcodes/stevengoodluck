@@ -36,16 +36,16 @@ const data = [
 function LeadingInnovators() {
   return (
     <motion.section
-      className="p-padding-hr pb-28 flex flex-col"
+      className="p-sm-padding-hr md:p-padding-hr pb-28 flex flex-col"
       id="teamSection"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }} // Animates when 30% of the section is visible
     >
-      <h2 className="text-[40px] font-[700] pb-5 text-white">Leading Crypto Innovators</h2>
+      <h2 className="text-[1.7rem] md:text-[40px] font-[700] pb-5 text-white">Leading Crypto Innovators</h2>
 
-      <div className="flex items-center gap-x-20">
+      <div className="flex flex-col md:flex-row items-center gap-y-10 md:gap-y-0 md:gap-x-20">
         {data.map((person, index) => {
           return (
             <motion.div key={index} variants={itemVariants}>

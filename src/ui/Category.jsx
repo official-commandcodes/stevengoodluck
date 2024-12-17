@@ -21,10 +21,10 @@ function Category({ image, heading, children, reverse = false }) {
   }
 
   return (
-    <div ref={ref} className={`flex h-[814px] ${reverse ? "flex-row-reverse" : ""}`}>
+    <div ref={ref} className={`flex flex-col md:flex-row md:h-[814px] ${reverse ? "flex-row-reverse" : ""}`}>
       {/* Image Animation */}
       <motion.div
-        className="w-[50%] h-full"
+        className="md:w-[50%] h-full"
         initial="hidden"
         animate={controls}
         variants={{
@@ -37,7 +37,7 @@ function Category({ image, heading, children, reverse = false }) {
 
       {/* Content Animation */}
       <motion.div
-        className={`h-full w-[50%] pt-24 ${reverse ? "pr-24" : "pl-20"}`}
+        className={`h-full md:w-[50%] text-center md:text-left pt-6 md:pt-24 ${reverse ? "md:pr-24" : "md:pl-20"}`}
         initial="hidden"
         animate={controls}
         variants={{
@@ -45,8 +45,8 @@ function Category({ image, heading, children, reverse = false }) {
           visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
         }}
       >
-        <h2 className="text-[3.5rem] font-bold">{heading}</h2>
-        <p className="leading-8 font-light text-[1.2rem] py-8">{children}</p>
+        <h2 className="text-[2rem] md:text-[3.5rem] font-bold">{heading}</h2>
+        <p className="leading-6 md:leading-8 font-light text-[0.9rem] md:text-[1.2rem] py-4 md:py-8">{children}</p>
         <ContactButton handleContact={handleContact}>Contact</ContactButton>
       </motion.div>
     </div>

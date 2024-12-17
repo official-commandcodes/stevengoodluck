@@ -21,13 +21,13 @@ function Growth({ heading, image, children }) {
       transition={{ duration: 0.6 }} // Add delay for staggered animation
       variants={fadeInUp}
     >
-      <div className="w-full h-[65%] overflow-hidden" style={{ borderRadius: "1.5rem" }}>
+      <div className="w-full md:h-[65%] overflow-hidden" style={{ borderRadius: "1.5rem" }}>
         <img src={image} alt={heading} className="w-full h-full object-cover" />
       </div>
 
-      <div className="h-[35%] flex flex-col justify-between pt-4">
-        <h3 className="font-bold text-[1.8rem]">{heading}</h3>
-        <p className="text-[1.2rem] py-3">{children}</p>
+      <div className="md:h-[35%] flex flex-col justify-between pt-4">
+        <h3 className="font-bold text-[1.4rem] md:text-[1.8rem]">{heading}</h3>
+        <p className="text-[1rem] md:text-[1.2rem] font-light md:font-normal py-3">{children}</p>
 
         <div className="w-fit">
           <ContactButton handleContact={handleContact}>More info</ContactButton>
