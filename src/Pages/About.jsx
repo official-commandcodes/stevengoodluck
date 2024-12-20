@@ -48,7 +48,7 @@ function About() {
       <section className="px-sm-padding-hr md:px-20 py-14 bg-customAmber-50">
         <h2 className="text-black font-bold text-[24px] md:text-[40px] pb-10">Our Vision for the Future</h2>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="flex flex-wrap justify-center lg:grid lg:justify-normal lg:grid-cols-3 gap-6">
           <Vision title="Community Driven">we will provide the best price for you , from the best quality we will give you a specials price compared to other places and we will give you other bonuses.</Vision>
           <Vision title="Action Oriented">AN easy process is our advantage, you don’t have to brother taking care of your needs, we will be ready help you until its finished.</Vision>
           <Vision title="Skilled Based">Quality first, all projects are backed by our fantastic support & 100% satisfaction guarantee.</Vision>
