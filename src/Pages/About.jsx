@@ -15,14 +15,14 @@ function About() {
       <header>
         <div className="text-[24px] px-sm-padding-hr lg:px-20 py-6">Bitsphere Consulting</div>
 
-        <div className="h-[80vh] relative px-sm-padding-hr md:px-0">
+        <div className="h-[80vh] relative px-[3rem] md:px-0">
           <div className="absolute top-0 left-0 w-full h-full">
             <img src="/about-bg.jpeg" alt="About Background Image" className="w-full h-full object-cover" />
           </div>
 
           <div className="absolute top-0 text-center left-0 w-full h-full flex flex-col gap-y-4 justify-center items-center bg-[#13131352]">
-            <h1 className="text-[48px] font-bold text-white">Welcome To Bitsphere Consulting </h1>
-            <p id="groteskEl" className="text-[32px] font-medium">
+            <h1 className="text-[30px] md:text-[48px] font-bold text-white">Welcome To Bitsphere Consulting </h1>
+            <p id="groteskEl" className="text-[25px] md:text-[32px] font-normal md:font-medium">
               Guiding Light: Illuminate Your Journey with Faith.
             </p>
           </div>
