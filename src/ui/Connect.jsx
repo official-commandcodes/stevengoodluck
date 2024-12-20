@@ -9,18 +9,18 @@ function Connect() {
       <form className="w-full flex-1" autoComplete="off">
         <div className="flex flex-col md:flex-row gap-x-4 w-full pb-6">
           <label htmlFor="username" className="w-full">
-            <span className="block text-[24px] text-white">Name</span>
+            <span className="block text-[18px] md:text-[24px] text-white">Name</span>
             <input type="text" id="username" name="username" spellCheck="false" className="bg-customGray-100 rounded-lg w-full px-4 py-3" />
           </label>
 
           <label htmlFor="email" className="w-full pt-4 md:pt-0">
-            <span className="block text-[24px] text-white">Email</span>
+            <span className="block text-[18px] md:text-[24px] text-white">Email</span>
             <input type="email" name="email" id="email" spellCheck="false" className="bg-customGray-100 rounded-lg w-full px-4 py-3" />
           </label>
         </div>
 
         <label htmlFor="message">
-          <span className="block text-[24px] text-white">Message</span>
+          <span className="block text-[18px] md:text-[24px] text-white">Message</span>
           <textarea name="message" id="message" spellCheck="false" className="bg-customGray-100 rounded-lg w-full px-4 py-3 resize-none h-[10rem]"></textarea>
         </label>
 

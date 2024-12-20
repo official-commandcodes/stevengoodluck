@@ -11,15 +11,15 @@ function Footer() {
           <div className="flex items-center gap-x-2 pb-5">
             <img src="/logo.svg" alt="" className="w-[80px] h-[80px]" />
             <div>
-              <h3 className="text-[30px] font-[700]">Bitsphere</h3>
-              <p className="font-[200] text-[24px] text-right">Consulting</p>
+              <h3 className="text-[24px] md:text-[30px] font-[700]">Bitsphere</h3>
+              <p className="font-[200] text-[18px] md:text-[24px] text-right">Consulting</p>
             </div>
           </div>
           <div className="font-[400] text-[16px]">Lorem ipsum dolor sit amet consectetur. Condimentum elementum molestie senectus leo a amet in. Sit suspendisse nMattis etnulla scelerisque egestas ante.</div>
         </div>
 
-        <ul className="footer_li font-[400] text-[22px]">
-          <h3 className="font-[700] text-[30px] pb-8">Company</h3>
+        <ul className="footer_li font-[400] md:text-[18px]">
+          <h3 className="font-[700] text-[24px] md:text-[30px] pb-2 md:pb-4">Company</h3>
           <li>
             <Link to="/about">About Us</Link>
           </li>
@@ -31,8 +31,8 @@ function Footer() {
           </li>
         </ul>
 
-        <ul className="footer_li font-[400] text-[22px]">
-          <h3 className="font-[700] text-[30px] pb-8">Resources</h3>
+        <ul className="footer_li font-[400] md:text-[18px]">
+          <h3 className="font-[700] text-[24px] md:text-[30px] pb-2 md:pb-4">Resources</h3>
           <li>
             <Link to="/faqs">FAQs</Link>
           </li>
@@ -42,8 +42,8 @@ function Footer() {
         </ul>
 
         <div>
-          <ul className="footer_li font-[400] text-[22px]">
-            <h3 className="font-[700] text-[30px] pb-8">Contact</h3>
+          <ul className="footer_li font-[400] md:text-[18px]">
+            <h3 className="font-[700] text-[24px] md:text-[30px] pb-2 md:pb-4">Contact</h3>
             <li>
               Email: <Link to="malto:hello@bitsphere.org">hello@bitsphere.org</Link>
             </li>
@@ -52,7 +52,7 @@ function Footer() {
             </li>
           </ul>
 
-          <div className="flex items-center gap-x-3 pt-8">
+          <div className="flex items-center justify-center md:justify-start gap-x-3 pt-8">
             <Link to="/" className={iconStyle}>
               <FaWhatsapp className="text-[#090A1C] text-[1.6rem]" />
             </Link>
@@ -72,7 +72,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="text-center pt-[4rem] text-[22px]">&copy; {new Date().getFullYear()} Bitsphere. All right reserved.</div>
+      <div className="text-center pt-[4rem] text-[17px] md:text-[20px]">&copy; {new Date().getFullYear()} Bitsphere. All right reserved.</div>
     </footer>
   );
 }
