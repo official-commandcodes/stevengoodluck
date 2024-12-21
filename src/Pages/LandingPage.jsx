@@ -70,7 +70,7 @@ function LandingPage() {
       <LeadingInnovators />
 
       {/* Discover Bitsphere */}
-      <section className="bg-primary-950 h-[45rem] flex justify-center items-center">
+      <section className="bg-primary-950 h-[25rem] flex justify-center items-center">
         <div className="p-6 md:p-0 md:w-[577px] flex flex-col justify-center items-center">
           <AnimatedText />
           <ContactButton handleContact={handleContact} weight={true}>
