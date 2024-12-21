@@ -20,7 +20,7 @@ function Header() {
     <header className="px-sm-padding-hr pb-14 md:pl-padding-hr md:py-5 md:pb-0">
       <div className="text-[19px] md:text-[24px] py-4 md:py-0 md:pt-6">Bitsphere Consulting</div>
 
-      <div className="flex-col-reverse gap-y-16 md:gap-y-0 md:flex-row flex items-center justify-between md:gap-x-10 h-full">
+      <div className="flex-col-reverse gap-y-8 md:gap-y-0 md:flex-row flex items-center justify-between md:gap-x-10 h-full">
         <div className="flex flex-col gap-y-[1.5rem] md:gap-y-[3rem] md:w-[50%] md:pr-32">
           <animated.h1 style={headingStyles} className="font-extrabold text-[2.7rem] max-w-[20rem] md:max-w-none leading-[3rem] md:text-[4rem] md:leading-[4.5rem]">
             Achieve Your Exchange Goals <br /> with Bitsphere Consulting
