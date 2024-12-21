@@ -21,7 +21,7 @@ function Growth({ heading, image, children }) {
       transition={{ duration: 0.6 }} // Add delay for staggered animation
       variants={fadeInUp}
     >
-      <div className="w-full md:h-[65%] overflow-hidden" style={{ borderRadius: "1.5rem" }}>
+      <div className="w-full md:h-[65%] overflow-hidden" style={{ borderRadius: "1rem" }}>
         <img src={image} alt={heading} className="w-full h-full object-cover" />
       </div>
 

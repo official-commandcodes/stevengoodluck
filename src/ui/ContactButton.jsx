@@ -13,7 +13,7 @@ function ContactButton({ children, weight = false, handleContact }) {
 
   return (
     <span>
-      <animated.button onClick={handleContact} style={headingStyles} className={`w-fit border-2 border-customAmber-50 rounded-full py-2 px-10 md:px-14 md:py-3 transition-colors duration-500 ${weight ? "bg-customAmber-50 text-primary-100 hover:bg-transparent hover:text-white" : "hover:bg-customAmber-50 hover:text-primary-100"}`}>
+      <animated.button onClick={handleContact} style={headingStyles} className={`w-fit border-2 border-customAmber-50 rounded-[5rem] py-2 px-6 md:px-14 md:py-3 transition-colors duration-500 ${weight ? "bg-customAmber-50 text-primary-100 hover:bg-transparent hover:text-white" : "hover:bg-customAmber-50 hover:text-primary-100"}`}>
         {children}
       </animated.button>
     </span>
