@@ -66,7 +66,7 @@ function Connect() {
           <textarea name="message" ref={messageRef} id="message" spellCheck="false" className="bg-customGray-100 rounded-lg w-full px-4 py-3 resize-none h-[10rem]"></textarea>
         </label>
 
-        <button className="w-fit flex items-center gap-x-2 transition-all border-2 mt-6 border-customAmber-50 text-white rounded-full px-6 py-2 md:px-14 md:py-3 hover:bg-customAmber-50 duration-500 hover:text-primary-100">
+        <button className="w-fit flex items-center gap-x-2 transition-all border-2 mt-3 border-customAmber-50 text-white rounded-full px-6 py-2 md:px-14 md:py-3 hover:bg-customAmber-50 duration-500 hover:text-primary-100">
           {loading && (
             <span>
               {/* prettier-ignore */}
