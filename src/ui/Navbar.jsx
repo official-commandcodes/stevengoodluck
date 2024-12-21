@@ -40,7 +40,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="px-sm-padding-hr bg-customAmber-50 lg:px-padding-hr py-3 flex justify-between items-center">
-        <Link to="/">
+        <Link to="/" className="w-[40px] h-[40px] md:w-auto md:h-auto">
           <img src="/logo.svg" alt="Site Logo" />
         </Link>
 
@@ -88,7 +88,7 @@ export default function Navbar() {
           Schedule a Call
         </animated.button>
 
-        <button className="block lg:hidden bg-customPurple-300 p-2">
+        <button className="block lg:hidden bg-customPurple-300 py-1 px-2">
           <MdOutlineSegment className="text-[2rem]" />
         </button>
       </nav>
