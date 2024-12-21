@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TestimonialItem from "./TestimonialItem";
 
-const buttonStyle = "flex justify-center items-center w-14 h-14 rounded-full transition-colors duration-500";
+const buttonStyle = "flex justify-center items-center w-10 h-10 md:w-14 md:h-14 rounded-full transition-colors duration-500";
 function Testimonial() {
   const sliderRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -95,10 +95,10 @@ function Testimonial() {
 
       <div className="pt-10 flex justify-center md:justify-start items-center gap-x-4">
         <button className={`${buttonStyle} ${isAtFirstSlide ? "bg-[#616161] cursor-not-allowed" : "bg-customAmber-50"}`} disabled={isAtFirstSlide} onClick={goToPrev}>
-          <HiArrowLongLeft className="text-[#090A1C] text-3xl" />
+          <HiArrowLongLeft className="text-[#090A1C] text-xl md:text-3xl" />
         </button>
         <button className={`${buttonStyle}  ${isAtLastSlide ? "bg-[#616161] cursor-not-allowed" : "bg-customAmber-50"}`} disabled={isAtLastSlide} onClick={goToNext}>
-          <HiArrowLongRight className="text-[#090A1C] text-3xl" />
+          <HiArrowLongRight className="text-[#090A1C] text-xl md:text-3xl" />
         </button>
       </div>
     </div>
