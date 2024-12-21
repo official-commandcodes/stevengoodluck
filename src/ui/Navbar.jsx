@@ -88,8 +88,8 @@ export default function Navbar() {
           Schedule a Call
         </animated.button>
 
-        <button className="block lg:hidden bg-customPurple-300 py-1 px-2">
-          <MdOutlineSegment className="text-[2rem]" />
+        <button className="w-[40px] h-[40px] md:w-auto md:h-auto flex justify-center items-center lg:hidden bg-customPurple-300 py-1 px-2">
+          <MdOutlineSegment className="text-[1.4rem]" />
         </button>
       </nav>
 
