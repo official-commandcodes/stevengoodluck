@@ -93,7 +93,7 @@ function Testimonial() {
         </TestimonialItem>
       </Slider>
 
-      <div className="pt-10 flex justify-center md:justify-start items-center gap-x-4">
+      <div className="pt-10 flex justify-center md:justify-start items-center gap-x-2 md:gap-x-4">
         <button className={`${buttonStyle} ${isAtFirstSlide ? "bg-[#616161] cursor-not-allowed" : "bg-customAmber-50"}`} disabled={isAtFirstSlide} onClick={goToPrev}>
           <HiArrowLongLeft className="text-[#090A1C] text-xl md:text-3xl" />
         </button>
