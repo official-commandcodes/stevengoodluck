@@ -86,7 +86,7 @@ function LandingPage() {
           <p className="text-[17px] md:text-[24px] font-[400]">At Bitsphere Consulting, we champion holistic digital asset management, fostering innovation and security in UAE’s crypto exchanges.</p>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-x-[3rem] py-[2.5rem] md:py-[5rem]">
+        <div className="flex flex-col md:flex-row items-center gap-x-[3rem] py-[1rem] md:py-[5rem]">
           <Center title="Client-Centric">We prioritize the needs of our clients, ensuring tailored solutions for each union challenge.</Center>
           <Center title="Expertise">Our team brings deep knowledge and experience in the crypto exchange sector.</Center>
           <Center title="Collaboration">We work closely who ensure receive their goals, fostering strong sorroudings</Center>

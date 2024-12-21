@@ -36,7 +36,7 @@ const data = [
 function LeadingInnovators() {
   return (
     <motion.section
-      className="p-sm-padding-hr md:p-padding-hr pb-28 flex flex-col"
+      className="p-sm-padding-hr md:p-padding-hr md:pb-28 flex flex-col"
       id="teamSection"
       variants={containerVariants}
       initial="hidden"
