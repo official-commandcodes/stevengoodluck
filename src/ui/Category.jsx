@@ -21,7 +21,7 @@ function Category({ image, heading, children, reverse = false }) {
   }
 
   return (
-    <div ref={ref} className={`flex flex-col md:flex-row md:h-[814px] ${reverse ? "flex-row-reverse" : ""}`}>
+    <div ref={ref} className={`flex flex-col md:h-[814px] ${reverse ? "md:flex-row-reverse" : "md:flex-row"}`}>
       {/* Image Animation */}
       <motion.div
         className="md:w-[50%] h-full"

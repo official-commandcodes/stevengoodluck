@@ -17,8 +17,8 @@ function ContactModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed flex justify-center items-start z-30 px-24 py-16 top-0 bottom-0 w-full h-full bg-[#13131352]" onClick={onClose}>
-      <animated.form autoComplete="off" className="px-10 py-5 rounded-[1rem] bg-customAmber-50 w-1/2" style={animation} onClick={(e) => e.stopPropagation()}>
+    <div className="fixed z-50 flex justify-center items-start md:px-24 md:py-16 top-0 bottom-0 w-full h-full bg-[#13131352]" onClick={onClose}>
+      <animated.form autoComplete="off" className="px-10 py-5 md:rounded-[1rem] bg-customAmber-50 h-full w-full md:h-fit md:w-1/2" style={animation} onClick={(e) => e.stopPropagation()}>
         <header className="flex items-center justify-between pb-3 border-b-[1px] border-[#60606052]">
           <h1 className="text-black text-[30px] font-semibold">Contact Us</h1>
           <button onClick={onClose}>
