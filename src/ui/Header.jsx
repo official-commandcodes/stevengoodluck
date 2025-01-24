@@ -23,11 +23,11 @@ function Header() {
       <div className="flex-col-reverse gap-y-8 md:gap-y-0 md:flex-row flex items-center justify-between md:gap-x-10 h-full">
         <div className="flex flex-col gap-y-[1.5rem] md:gap-y-[3rem] md:w-[50%] md:pr-32">
           <animated.h1 style={headingStyles} className="font-extrabold text-[2.7rem] max-w-[20rem] md:max-w-none leading-[3rem] md:text-[4rem] md:leading-[4.5rem]">
-            Achieve Your Exchange Goals <br /> with Bitsphere Consulting
+            Achieve your project’s goals <br /> with bitsphere consulting
           </animated.h1>
 
           <animated.p style={headingStyles} className="text-[1.2rem] font-light">
-            Bitsphere Consulting connects projects with the right people for Tier 1 and centralized exchanges. Our market knowledge and relationships help you reach your project goals efficiently.
+            We deliver innovative blockchain solutions tailored for businesses, developers, and investors, empowering them to stay ahead in a rapidly evolving digital landscape. Our market knowledge and relationships help you reach your goals efficiently.
           </animated.p>
 
           <ContactButton handleContact={handleContact}>Contact</ContactButton>

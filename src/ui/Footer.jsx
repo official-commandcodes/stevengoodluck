@@ -15,7 +15,7 @@ function Footer() {
               <p className="font-[200] text-[18px] md:text-[24px] text-right">Consulting</p>
             </div>
           </div>
-          <div className="font-[400] text-[16px]">Lorem ipsum dolor sit amet consectetur. Condimentum elementum molestie senectus leo a amet in. Sit suspendisse nMattis etnulla scelerisque egestas ante.</div>
+          <div className="font-[400] text-[16px]">One Central, Dubai World Trade Centre - Office 01-14, Level 1 The Offices 4 - Dubai - United Arab Emirates</div>
         </div>
 
         <ul className="footer_li font-[400] md:text-[18px]">
