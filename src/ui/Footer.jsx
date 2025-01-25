@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import { FaFacebook, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
-
-const iconStyle = "w-[44px] h-[44px] rounded-full bg-white flex justify-center items-center";
+import { FaSquareXTwitter, FaTelegram } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -19,33 +18,25 @@ function Footer() {
         </div>
 
         <div>
-          <ul className="footer_li font-[400] md:text-[18px]">
-            <h3 className="font-[700] text-[24px] md:text-[30px] pb-2 md:pb-4">Contact</h3>
+          <ul className="flex items-center gap-x-3 font-[400] md:text-[18px]">
             <li>
-              Email: <Link to="malto:hello@bitsphere.org">hello@bitsphere.org</Link>
+              <Link to="https://x.com/fullbodyteasers">
+                <FaSquareXTwitter className="text-[#ffffff] text-[1.6rem]" />
+              </Link>
             </li>
+
             <li>
-              Call: <Link to="tel:07036834086">+234-7036 834 086</Link>
+              <Link to="/">
+                <FaLinkedin className="text-[#ffffff] text-[1.6rem]" />
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/">
+                <FaTelegram className="text-[#ffffff] text-[1.6rem]" />
+              </Link>
             </li>
           </ul>
-
-          <div className="flex items-center justify-center md:justify-start gap-x-3 pt-8">
-            <Link to="/" className={iconStyle}>
-              <FaWhatsapp className="text-[#090A1C] text-[1.6rem]" />
-            </Link>
-
-            <Link to="/" className={iconStyle}>
-              <FaFacebook className="text-[#090A1C] text-[1.6rem]" />
-            </Link>
-
-            <Link to="/" className={iconStyle}>
-              <FaInstagram className="text-[#090A1C] text-[1.6rem]" />
-            </Link>
-
-            <Link to="/" className={iconStyle}>
-              <FaYoutube className="text-[#090A1C] text-[1.6rem]" />
-            </Link>
-          </div>
         </div>
       </div>
 

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const PhoneImage = () => {
   return (
     <motion.div
-      className="md:w-[50%] h-full bg-red-300"
+      className="md:w-[50%] h-full"
       initial={{ opacity: 0, y: 30 }} // Start slightly below and invisible
       animate={{ opacity: 1, y: 0 }} // Fade in and rise to position
       transition={{ duration: 1, ease: "easeOut" }} // Smooth fade-in transition

@@ -61,14 +61,6 @@ body {
   border-top: 2px solid #4936dc;
 }
 
-.footer_li li {
-  padding: 5px 0;
-}
-
-.footer_li li {
-  @apply hover:underline;
-}
-
 #groteskEl {
   font-family: "Space Grotesk", sans-serif;
 }
