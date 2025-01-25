@@ -18,29 +18,6 @@ function Footer() {
           <div className="font-[400] text-[16px]">One Central, Dubai World Trade Centre - Office 01-14, Level 1 The Offices 4 - Dubai - United Arab Emirates</div>
         </div>
 
-        <ul className="footer_li font-[400] md:text-[18px]">
-          <h3 className="font-[700] text-[24px] md:text-[30px] pb-2 md:pb-4">Company</h3>
-          <li>
-            <Link to="/about">About Us</Link>
-          </li>
-          <li>
-            <Link to="/">Blog</Link>
-          </li>
-          <li>
-            <Link to="/">Terms and Condition</Link>
-          </li>
-        </ul>
-
-        <ul className="footer_li font-[400] md:text-[18px]">
-          <h3 className="font-[700] text-[24px] md:text-[30px] pb-2 md:pb-4">Resources</h3>
-          <li>
-            <Link to="/faqs">FAQs</Link>
-          </li>
-          <li>
-            <Link to="/">Privacy and Policy</Link>
-          </li>
-        </ul>
-
         <div>
           <ul className="footer_li font-[400] md:text-[18px]">
             <h3 className="font-[700] text-[24px] md:text-[30px] pb-2 md:pb-4">Contact</h3>

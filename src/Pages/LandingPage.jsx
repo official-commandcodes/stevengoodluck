@@ -6,7 +6,7 @@ import Category from "../ui/Category";
 import Growth from "../ui/Growth";
 import Testimonial from "../ui/testimonial/Testimonial";
 import Connect from "../ui/Connect";
-import LeadingInnovators from "../ui/Crypto/LeadingInnovators";
+// import LeadingInnovators from "../ui/Crypto/LeadingInnovators";
 import ContactButton from "../ui/ContactButton";
 import Footer from "../ui/Footer";
 import AnimatedText from "../ui/AnimatedText";
@@ -31,7 +31,7 @@ function LandingPage() {
         </Category>
 
         <Category image="/category--3.png" heading="Tailored advisory">
-          Bitsphere Consulting connects projects with the right people for Tier 1 and centralized exchanges. Our market knowledge and relationships help you reach your project goals hhhhh niche girl gren priority efficiently.
+          We offer expert advisory services tailored to projects, guiding you through strategy, development, and implementation to ensure success in the decentralized ecosystem. Our market knowledge and relationships help you reach your project goals.
         </Category>
       </section>
 
@@ -40,20 +40,16 @@ function LandingPage() {
         <h2 className="font-bold text-[1.7rem] md:text-[2.3rem] pb-10">Unlock Holistic Exchange Growth</h2>
 
         <div className="grid md:grid-cols-2 gap-y-16 gap-x-10">
-          <Growth heading="Comprehensive Exchange Audits" image="/growth--1.png">
-            Bitsphere Consulting connects projects with the right people for Tier 1 and centralized exchanges. Our market tly.
+          <Growth heading="Incubation" image="/growth--1.png">
+            We provide comprehensive project incubation services, offering strategic guidance, resources, and support to help innovative ideas grow into successful ventures.
           </Growth>
 
           <Growth heading="Regulatory Compliance Solutions" image="/growth--2.png">
-            Bitsphere Consulting connects projects with the right people for Tier 1 and centralized exchanges. Our market tly.
-          </Growth>
-
-          <Growth heading="Custom Crypto Integration" image="/growth--3.png">
-            Bitsphere Consulting connects projects with the right people for Tier 1 and centralized exchanges. Our market tly.
+            We deliver tailored regulatory compliance solutions, ensuring your projects meet legal standards while navigating the complex Web3 and blockchain landscape seamlessly.
           </Growth>
 
           <Growth heading="Strategic Market Positioning" image="/growth--4.png">
-            Bitsphere Consulting connects projects with the right people for Tier 1 and centralized exchanges. Our market tly.
+            We craft strategic marketing and positioning plans to elevate your project, ensuring it stands out in the competitive market and reaches the right audience effectively.
           </Growth>
         </div>
       </section>
@@ -67,7 +63,7 @@ function LandingPage() {
       <Connect />
 
       {/* Innovators */}
-      <LeadingInnovators />
+      {/* <LeadingInnovators /> */}
 
       {/* Discover Bitsphere */}
       <section className="bg-primary-950 h-[25rem] flex justify-center items-center">

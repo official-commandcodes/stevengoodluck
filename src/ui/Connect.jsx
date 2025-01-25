@@ -44,8 +44,8 @@ function Connect() {
   return (
     <section className="p-sm-padding-hr md:p-padding-hr flex flex-col md:flex-row gap-y-10 md:gap-y-0 md:gap-x-16 bg-primary-950" id="ContactSection">
       <div className="h-full self-start flex-1 text-white">
-        <h2 className="text-[24px] md:text-[40px] font-[700] pb-3 md:pb-5">Connect with Our Crypto Experts</h2>
-        <p className="text-[16px] md:text-[20px] font-[400]">Reach our to Bitsphere Consulting for tailored crypto exchange solutions.</p>
+        <h2 className="text-[24px] md:text-[40px] font-[700] pb-3 md:pb-5">Connect with one of our team members:</h2>
+        <p className="text-[16px] md:text-[20px] font-[400]">Reach out to Bitsphere Consulting for Tailored Solutions today</p>
       </div>
 
       <form className="w-full flex-1" autoComplete="off" onSubmit={handleFormSubmission}>
