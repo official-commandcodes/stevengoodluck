@@ -51,12 +51,12 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="relative px-sm-padding-hr bg-customAmber-50 lg:px-padding-hr py-3 flex justify-between items-center">
+      <nav className="relative px-sm-padding-hr bg-primary-100 lg:px-padding-hr py-3 flex justify-between items-center">
         <Link to="/" className="w-[40px] h-[40px] md:w-auto md:h-auto">
           <img src="/logo.svg" alt="Site Logo" />
         </Link>
 
-        <ul className="hidden lg:flex items-center gap-x-6 text-primary-100">
+        <ul className="hidden lg:flex items-center gap-x-6 text-customAmber-100">
           {navItems.map(({ to, text }, index) => (
             <motion.li
               key={index}

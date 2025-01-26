@@ -76,11 +76,11 @@ function Testimonial() {
           Bitsphere Consulting&apos;s expertise in the crypto space is unparalleled. Their innovative solutions have significantly boosted both our operational efficiency and security measures. Partnering with them has been a pivotal step in our business growth and relationship.
         </TestimonialItem>
 
-        <TestimonialItem image="/sabre.jpeg" testimonyBy="Matthew Weisenthal Director XDC Foundation">
+        <TestimonialItem image="/xdc.jpeg" testimonyBy="Matthew Weisenthal Director XDC Foundation">
           Bitsphere helped us to achieve Kraken listing where it felt almost an impossible reach. The team are incredibly professional and provide updates in a timely manner. Their relationships in the market is vast.
         </TestimonialItem>
 
-        <TestimonialItem image="/xdc.jpeg" testimonyBy="Floki Team - Sabre">
+        <TestimonialItem image="/sabre.jpeg" testimonyBy="Floki Team - Sabre">
           Bitsphere have incredibly professional and efficient in getting us listed on Binance. It took them 6 months but worth the wait. We expect to be working with them a lot more in the future.
         </TestimonialItem>
       </Slider>
