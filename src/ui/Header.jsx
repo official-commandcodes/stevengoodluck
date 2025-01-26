@@ -1,6 +1,6 @@
 import { useSpring, animated } from "@react-spring/web";
 
-import HeaderPhoneImage from "../ui/HeaderPhoneImage";
+// import HeaderPhoneImage from "../ui/HeaderPhoneImage";
 import ContactButton from "./ContactButton";
 
 import { useContactContext } from "../context/ContactContext";
@@ -33,7 +33,7 @@ function Header() {
           <ContactButton handleContact={handleContact}>Contact</ContactButton>
         </div>
 
-        <HeaderPhoneImage />
+        {/* <HeaderPhoneImage /> */}
       </div>
     </header>
   );
